@@ -170,7 +170,7 @@
         [self setAssetsFilter:[ALAssetsFilter allAssets] type:0];
         self.maximumNumberOfSelection = self.maximumNumberOfSelectionMedia;
         self.segmentedControl.hidden = YES;
-        self.labelSelectedMedia.hidden = NO;
+        self.labelSelectedMedia.hidden = YES;
         if(_maximumNumberOfSelection > 1)
             self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"Choose media", @"UzysAssetsPickerController", nil);
         else
@@ -186,7 +186,7 @@
             
             self.maximumNumberOfSelection = self.maximumNumberOfSelectionVideo;
             self.segmentedControl.hidden = YES;
-            self.labelSelectedMedia.hidden = NO;
+            self.labelSelectedMedia.hidden = YES;
             if(_maximumNumberOfSelection > 1)
                 self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"Choose videos", @"UzysAssetsPickerController", nil);
             else
@@ -200,7 +200,7 @@
             self.segmentedControl.selectedSegmentIndex = 0;
             self.maximumNumberOfSelection = self.maximumNumberOfSelectionPhoto;
             self.segmentedControl.hidden = YES;
-            self.labelSelectedMedia.hidden = NO;
+            self.labelSelectedMedia.hidden = YES;
             if(_maximumNumberOfSelection >1)
                 self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"Choose photos", @"UzysAssetsPickerController", nil);
             else
